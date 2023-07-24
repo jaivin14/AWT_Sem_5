@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Reistration Form</title>
+</head>
+
+<body>
+    <h2>Reistration Form</h2>
+    <form action="/display" method="post">
+        <label>Name :</label>
+        <input type="text" name="name" placeholder="Enter Your  Name"><br><br>
+        <label>Email :</label>
+        <input type="email" name="email" placeholder="Enter Your Email"><br><br>
+        <label>Password :</label>
+        <input type="password" name="Pass" placeholder="Enter Your Password"><br><br>
+        <label>Contact No. :</label>
+        <input type="tel" name="phone" placeholder="Enter Your Contact number"><br><br>
+        <label>Gender:</label><br>
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-male" name="gender" value="male">
+        <label for="gender-female">female</label>
+        <input type="radio" id="gender-female" name="gender" value="female">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other"><br>
+        <p>select state :</p>
+        <select name="state">
+            <option value="select">Select State</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Uttar-Pradesh">Uttar-Pradesh</option>
+        </select>
+        <p>Hobbies :</p>
+        <input type="checkbox" name="hobbies" value="Cricket">
+        <label for="Cricket">Cricket</label><br>
+
+        <input type="checkbox" name="hobbies" value="Reading">
+        <label for="Football">Reading</label><br>
+
+        <input type="checkbox" name="hobbies" value="Dancing">
+        <label for="Vollyball">Dancing</label><br>
+
+        <input type="checkbox" name="hobbies" value="Music">
+        <label for="Vollyball">Music</label><br>
+
+        <br>
+        <button type="submit" name="submit"> Display</button>
+    </form>
+</body>
+
+</html>
